@@ -253,6 +253,15 @@ window._gltfLoaderReady = false;
     font-style: normal;
     color: transparent;
     -webkit-text-stroke: 1px rgba(240,237,232,0.3);
+    paint-order: stroke fill;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 em {
+      color: rgba(240,237,232,0.18);
+      -webkit-text-stroke: 0px transparent;
+      text-shadow: none;
+    }
   }
 
   .hero-bottom {
@@ -1796,6 +1805,13 @@ function switchProjectTab(tab) {
     mouse.y = (e.clientY / window.innerHeight) * 2 - 1;
   });
 
+  window.addEventListener('touchmove', function(e) {
+    if (e.touches.length > 0) {
+      mouse.x = (e.touches[0].clientX / window.innerWidth)  * 2 - 1;
+      mouse.y = (e.touches[0].clientY / window.innerHeight) * 2 - 1;
+    }
+  }, { passive: true });
+
   let modelGroup = null;
   let headBone   = null;
   let mixer      = null;
@@ -1816,9 +1832,8 @@ function switchProjectTab(tab) {
   function loadModel() {
     setProgress(60, 'Персонаж');
 
-    const isMobile = window.matchMedia('(max-width: 768px)').matches
-                  || navigator.hardwareConcurrency <= 4;
-    if (isMobile) {
+    const isLowEnd = navigator.hardwareConcurrency <= 2;
+    if (isLowEnd) {
       useFallback();
       hideLoader();
       return;
