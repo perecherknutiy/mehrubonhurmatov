@@ -254,12 +254,6 @@ window._gltfLoaderReady = false;
     color: transparent;
     -webkit-text-stroke: 1px rgba(240,237,232,0.3);
   }
-  @media (max-width: 768px) {
-    .hero h1 em {
-      color: rgba(240,237,232,0.22);
-      -webkit-text-stroke: 0;
-    }
-  }
 
   .hero-bottom {
     display: flex;
@@ -1730,8 +1724,6 @@ function switchProjectTab(tab) {
 
 (function () {
 
-  const isMobile = window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window;
-
   const loaderScreen = document.getElementById('loader-screen');
   const loaderBar    = document.getElementById('loader-bar');
   const loaderStatus = document.getElementById('loader-status');
@@ -1816,7 +1808,7 @@ function switchProjectTab(tab) {
     const s2 = document.createElement('script');
     s2.src = 'https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js';
     s2.onload = loadModel;
-    s2.onerror = function() { if (!isMobile) useFallback(); hideLoader(); };
+    s2.onerror = function() { useFallback(); hideLoader(); };
     document.head.appendChild(s2);
   };
   document.head.appendChild(loaderScript);
@@ -1824,8 +1816,9 @@ function switchProjectTab(tab) {
   function loadModel() {
     setProgress(60, 'Персонаж');
 
-    const isLowEnd = !isMobile && navigator.hardwareConcurrency <= 2;
-    if (isLowEnd) {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches
+                  || navigator.hardwareConcurrency <= 4;
+    if (isMobile) {
       useFallback();
       hideLoader();
       return;
@@ -1888,7 +1881,7 @@ function switchProjectTab(tab) {
       },
       function(err) {
         console.warn('GLB not found, using fallback.', err);
-        if (!isMobile) useFallback();
+        useFallback();
         hideLoader();
       }
     );
