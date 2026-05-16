@@ -1269,79 +1269,79 @@
   ],
   "images": [
     {
-      "uri": "textures/Armor_Plate_Comb_baseColor.png"
+      "uri": "textures/Armor_Plate_Comb_baseColor.webp"
     },
     {
-      "uri": "textures/Armor_Plate_Comb_metallicRoughness.png"
+      "uri": "textures/Armor_Plate_Comb_metallicRoughness.webp"
     },
     {
-      "uri": "textures/Armor_Plate_Comb_normal.png"
+      "uri": "textures/Armor_Plate_Comb_normal.webp"
     },
     {
-      "uri": "textures/Beskar_baseColor.png"
+      "uri": "textures/Beskar_baseColor.webp"
     },
     {
-      "uri": "textures/Beskar_metallicRoughness.png"
+      "uri": "textures/Beskar_metallicRoughness.webp"
     },
     {
-      "uri": "textures/Beskar_normal.png"
+      "uri": "textures/Beskar_normal.webp"
     },
     {
-      "uri": "textures/Beskar_Golden_normal.png"
+      "uri": "textures/Beskar_Golden_normal.webp"
     },
     {
-      "uri": "textures/Blaster_combined_baseColor.png"
+      "uri": "textures/Blaster_combined_baseColor.webp"
     },
     {
-      "uri": "textures/Blaster_combined_metallicRoughness.png"
+      "uri": "textures/Blaster_combined_metallicRoughness.webp"
     },
     {
-      "uri": "textures/Blaster_combined_normal.png"
+      "uri": "textures/Blaster_combined_normal.webp"
     },
     {
-      "uri": "textures/Cape_Material_baseColor.png"
+      "uri": "textures/Cape_Material_baseColor.webp"
     },
     {
-      "uri": "textures/Cape_Material_metallicRoughness.png"
+      "uri": "textures/Cape_Material_metallicRoughness.webp"
     },
     {
-      "uri": "textures/Cape_Material_normal.png"
+      "uri": "textures/Cape_Material_normal.webp"
     },
     {
-      "uri": "textures/Floor_Color_baseColor.png"
+      "uri": "textures/Floor_Color_baseColor.webp"
     },
     {
-      "uri": "textures/Floor_Color_metallicRoughness.png"
+      "uri": "textures/Floor_Color_metallicRoughness.webp"
     },
     {
-      "uri": "textures/Floor_Color_normal.png"
+      "uri": "textures/Floor_Color_normal.webp"
     },
     {
-      "uri": "textures/Full_Rifle_baseColor.png"
+      "uri": "textures/Full_Rifle_baseColor.webp"
     },
     {
-      "uri": "textures/Full_Rifle_metallicRoughness.png"
+      "uri": "textures/Full_Rifle_metallicRoughness.webp"
     },
     {
-      "uri": "textures/Full_Rifle_normal.png"
+      "uri": "textures/Full_Rifle_normal.webp"
     },
     {
-      "uri": "textures/Grogu_Combined_baseColor.png"
+      "uri": "textures/Grogu_Combined_baseColor.webp"
     },
     {
-      "uri": "textures/Grogu_Combined_metallicRoughness.png"
+      "uri": "textures/Grogu_Combined_metallicRoughness.webp"
     },
     {
-      "uri": "textures/Grogu_Combined_normal.png"
+      "uri": "textures/Grogu_Combined_normal.webp"
     },
     {
-      "uri": "textures/Inner_Armor_Combined_baseColor.png"
+      "uri": "textures/Inner_Armor_Combined_baseColor.webp"
     },
     {
-      "uri": "textures/Inner_Armor_Combined_metallicRoughness.png"
+      "uri": "textures/Inner_Armor_Combined_metallicRoughness.webp"
     },
     {
-      "uri": "textures/Inner_Armor_Combined_normal.png"
+      "uri": "textures/Inner_Armor_Combined_normal.webp"
     }
   ],
   "materials": [
